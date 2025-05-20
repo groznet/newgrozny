@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewGrozny - Продажа квартир в Грозном</title>
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         .navbar-brand {
             font-weight: 700;
@@ -34,8 +37,12 @@
     <div class="header-contact">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="contact-info">
-                <span class="me-3"><i class="fas fa-phone-alt me-2"></i>+7 (999) 123-45-67</span>
+                <span class="me-3"><i class="fas fa-phone-alt me-1"></i>+7 (929) 888-33-27</span>
                 <span><i class="fas fa-envelope me-2"></i>info@newgrozny.ru</span>
+            </div>
+            <!-- Announcement animated message -->
+            <div class="announcement-message">
+                <span class="me-3"><i class="fas fa-bullhorn me-1"></i>Скидка 10% на все квартиры в Грозном, время ограничено!</span>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com/newgrozny" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -78,7 +85,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero bg-dark text-white py-5" style="min-height: 80vh;">
+    <section id="home" class="hero bg-dark text-white py-5" style="min-height: 80vh; background: url('images/slide-1.jpg');">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-7">
@@ -180,7 +187,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm">
                         <div class="position-relative">
-                            <img src="images/property1.jpg" class="card-img-top" alt="ЖК «Грозный Сити»">
+                            <img src="images/apartment-placeholder.png" class="card-img-top" alt="ЖК «Грозный Сити»">
                             <div class="position-absolute top-0 end-0 m-2">
                                 <button class="btn btn-sm btn-light"><i class="far fa-heart"></i></button>
                             </div>
@@ -206,9 +213,70 @@
                         </div>
                     </div>
                 </div>
+                <!-- Property Card 2 -->
+                <!-- Make info different -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/apartment-placeholder.png" class="card-img-top" alt="ЖК «Грозный Сити»">
+                            <div class="position-absolute top-0 end-0 m-2">
+                                <button class="btn btn-sm btn-light"><i class="far fa-heart"></i></button>
+                            </div>
+                            <span class="badge bg-primary position-absolute start-0 bottom-0 m-2">Новостройка</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">2-комн. квартира, 65 м²</h5>
+                            <p class="card-text text-muted">ЖК Анлийский квартал</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="h4 text-primary mb-0">3 200 000 ₽</p>
+                                    <small class="text-muted">49 412 ₽/м²</small>
+                                </div>
+                                <a href="/catalog/1" class="btn btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-layer-group"></i> 5/9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/apartment-placeholder.png" class="card-img-top" alt="ЖК «Грозный Сити»">
+                            <div class="position-absolute top-0 end-0 m-2">
+                                <button class="btn btn-sm btn-light"><i class="far fa-heart"></i></button>
+                            </div>
+                            <span class="badge bg-primary position-absolute start-0 bottom-0 m-2">Новостройка</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">1-комн. квартира, 45 м²</h5>
+                            <p class="card-text text-muted">ЖК Эмпайр</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="h4 text-primary mb-0">2 200 000 ₽</p>
+                                    <small class="text-muted">49 412 ₽/м²</small>
+                                </div>
+                                <a href="/catalog/1" class="btn btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-layer-group"></i> 5/9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Property Card 2 with Video -->
-                <div class="col">
+                <!-- <div class="col">
                     <div class="card h-100 shadow-sm">
                         <div class="position-relative">
                             <video class="card-img-top" controls poster="images/video-thumbnail.jpg">
@@ -235,7 +303,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Add more property cards as needed -->
             </div>
@@ -344,7 +412,7 @@
                 <!-- Team Member 1 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow-sm h-100">
-                        <img src="images/team1.jpg" class="card-img-top" alt="Аслан Ахмадов">
+                        <img src="images/person.png" class="" alt="Аслан Ахмадов">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-1">Аслан Ахмадов</h5>
                             <p class="text-muted small">Руководитель отдела продаж</p>
@@ -359,7 +427,7 @@
                 <!-- Team Member 2 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow-sm h-100">
-                        <img src="images/team2.jpg" class="card-img-top" alt="Малика Исраилова">
+                        <img src="images/person.png" class="" alt="Малика Исраилова">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-1">Малика Исраилова</h5>
                             <p class="text-muted small">Юридический консультант</p>
@@ -374,7 +442,7 @@
                 <!-- Team Member 3 -->
                 <div class="col-md-4">
                     <div class="card border-0 shadow-sm h-100">
-                        <img src="images/team3.jpg" class="card-img-top" alt="Ислам Бетербиев">
+                        <img src="images/person.png" class="" alt="Ислам Бетербиев">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-1">Ислам Бетербиев</h5>
                             <p class="text-muted small">Аналитик рынка недвижимости</p>
@@ -709,6 +777,7 @@
                     <div class="mb-4">
                         <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
                             <img src="images/logo-white.png" alt="NewGrozny Logo" style="height: 40px;">
+                            <!-- Make as in header -->
                             <span class="h4 ms-2 text-white">NewGrozny</span>
                         </a>
                         <p class="small">Онлайн-платформа для поиска и подбора недвижимости в Грозном. Актуальные предложения квартир, домов и апартаментов.</p>
