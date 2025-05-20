@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewGrozny - Продажа квартир в Грозном</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        .nav-link {
+            color: #2c3e50 !important;
+            font-weight: 500;
+            margin: 0 15px;
+        }
+        .header-contact {
+            background: #f8f9fa;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .social-icons a {
+            color: #2c3e50;
+            margin-left: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Contact Strip -->
+    <div class="header-contact">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span class="me-3"><i class="fas fa-phone-alt me-2"></i>+7 (999) 123-45-67</span>
+                <span><i class="fas fa-envelope me-2"></i>info@newgrozny.ru</span>
+            </div>
+            <div class="social-icons">
+                <a href="https://instagram.com/newgrozny" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://vk.com/newgrozny" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://youtube.com/newgrozny" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/" style="font-family: serif;">
+                <!-- <img src="images/logo.png" alt="NewGrozny Logo" style="height: 40px;" class="me-2"> -->
+                <span style="color: #2B7338">New</span><span style="color: #DA251D">Grozny</span>
+            </a>- Твоя квартира в Грозном🔑
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-dark text-white py-5" style="min-height: 80vh;">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 mb-4">Найдите свой идеальный дом в Грозном</h1>
+                    <p class="lead mb-4">Актуальные предложения квартир, домов и апартаментов по выгодным ценам</p>
+                    
+                    <!-- Search Form -->
+                    <div class="search-form bg-white p-4 rounded shadow">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <select class="form-select">
+                                        <option>Тип недвижимости</option>
+                                        <option>Квартира</option>
+                                        <option>Дом</option>
+                                        <option>Апартаменты</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" placeholder="Макс. цена (руб)">
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary w-100">Найти</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- Hero Image Carousel (Add your images) -->
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3">
+                            <div class="carousel-item active">
+                                <img src="images/hero1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/hero2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 mb-3">Актуальные предложения</h2>
+                    <p class="lead text-muted">Более 500 объектов недвижимости в Грозном</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="row mb-4 g-3">
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Все типы</option>
+                        <option>Квартиры</option>
+                        <option>Дома</option>
+                        <option>Апартаменты</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Любая цена</option>
+                        <option>До 3 млн ₽</option>
+                        <option>3-5 млн ₽</option>
+                        <option>5-10 млн ₽</option>
+                        <option>Свыше 10 млн ₽</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Любая площадь</option>
+                        <option>До 50 м²</option>
+                        <option>50-80 м²</option>
+                        <option>80-120 м²</option>
+                        <option>Свыше 120 м²</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Количество комнат</option>
+                        <option>Студия</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Property Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <img src="images/property1.jpg" class="card-img-top" alt="ЖК «Грозный Сити»">
+                            <div class="position-absolute top-0 end-0 m-2">
+                                <button class="btn btn-sm btn-light"><i class="far fa-heart"></i></button>
+                            </div>
+                            <span class="badge bg-primary position-absolute start-0 bottom-0 m-2">Новостройка</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">3-комн. квартира, 85 м²</h5>
+                            <p class="card-text text-muted">ЖК «Грозный Сити», центр города</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="h4 text-primary mb-0">4 200 000 ₽</p>
+                                    <small class="text-muted">49 412 ₽/м²</small>
+                                </div>
+                                <a href="/catalog/1" class="btn btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-layer-group"></i> 5/9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 with Video -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="position-relative">
+                            <video class="card-img-top" controls poster="images/video-thumbnail.jpg">
+                                <source src="images/property-video.mp4" type="video/mp4">
+                            </video>
+                            <span class="badge bg-success position-absolute start-0 bottom-0 m-2">С отделкой</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">2-комн. апартаменты, 65 м²</h5>
+                            <p class="card-text text-muted">Бизнес-класс, р-н Старопромысловский</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="h4 text-primary mb-0">3 500 000 ₽</p>
+                                    <small class="text-muted">53 846 ₽/м²</small>
+                                </div>
+                                <a href="/catalog/2" class="btn btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex justify-content-between text-muted small">
+                                <span><i class="fas fa-bed"></i> 2</span>
+                                <span><i class="fas fa-bath"></i> 1</span>
+                                <span><i class="fas fa-layer-group"></i> 3/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more property cards as needed -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary px-5 py-3">Показать еще</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 mb-3">О компании NewGrozny</h2>
+                    <div class="divider mx-auto bg-primary" style="width: 100px; height: 3px;"></div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="row g-5 align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/about-main.jpg" alt="Наша команда" class="img-fluid rounded-3 shadow">
+                        <div class="position-absolute bottom-0 start-0 bg-primary text-white p-4 m-3 rounded">
+                            <h3 class="h4 mb-0">12+ лет</h3>
+                            <p class="mb-0">на рынке недвижимости</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h3 class="h2 mb-4">Ваш надежный гид в мире недвижимости Грозного</h3>
+                        <p class="lead mb-4">NewGrozny - это команда профессиональных риэлторов и аналитиков рынка недвижимости, помогающая клиентам найти идеальное жилье с 2012 года.</p>
+                        
+                        <!-- Features Grid -->
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 text-primary fs-4 me-3">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Безопасные сделки</h5>
+                                        <p class="text-muted small">Полное юридическое сопровождение</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 text-primary fs-4 me-3">
+                                        <i class="fas fa-ruble-sign"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Лучшие цены</h5>
+                                        <p class="text-muted small">Специальные условия от застройщиков</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 text-primary fs-4 me-3">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div>
+                                        <h5>600+ объектов</h5>
+                                        <p class="text-muted small">Самая полная база недвижимости</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 text-primary fs-4 me-3">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h5>24/7 поддержка</h5>
+                                        <p class="text-muted small">Персональный менеджер для каждого клиента</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-primary px-4 py-2">Получить консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="row mt-5 g-4">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="h2">Наша команда</h3>
+                </div>
+                
+                <!-- Team Member 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/team1.jpg" class="card-img-top" alt="Аслан Ахмадов">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Аслан Ахмадов</h5>
+                            <p class="text-muted small">Руководитель отдела продаж</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/team2.jpg" class="card-img-top" alt="Малика Исраилова">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Малика Исраилова</h5>
+                            <p class="text-muted small">Юридический консультант</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="fab fa-vk"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/team3.jpg" class="card-img-top" alt="Ислам Бетербиев">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-1">Ислам Бетербиев</h5>
+                            <p class="text-muted small">Аналитик рынка недвижимости</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="text-primary"><i class="fab fa-telegram"></i></a>
+                                <a href="#" class="text-primary"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="row mt-5 bg-primary text-white py-5 rounded-3 shadow">
+                <div class="col-6 col-md-3 text-center">
+                    <h3 class="display-6">850+</h3>
+                    <p class="mb-0">Успешных сделок</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <h3 class="display-6">94%</h3>
+                    <p class="mb-0">Положительных отзывов</p>
+                </div>
+                <div class="col-6 col-md-3 text-center mt-3 mt-md-0">
+                    <h3 class="display-6">15</h3>
+                    <p class="mb-0">Партнеров-застройщиков</p>
+                </div>
+                <div class="col-6 col-md-3 text-center mt-3 mt-md-0">
+                    <h3 class="display-6">24/7</h3>
+                    <p class="mb-0">Поддержка клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 mb-3">Новости и статьи</h2>
+                    <p class="lead text-muted">Актуальная информация о рынке недвижимости Грозного</p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Featured Article -->
+                    <article class="card mb-5 shadow-sm">
+                        <img src="images/featured-article.jpg" class="card-img-top" alt="Рынок недвижимости 2024">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Аналитика</span>
+                                <span class="text-muted ms-2"><i class="far fa-clock me-1"></i>15 мая 2024</span>
+                            </div>
+                            <h2 class="h1 mb-3">Тенденции рынка недвижимости Грозного в 2024 году</h2>
+                            <p class="lead">Полный обзор ценовой динамики, популярных районов и инвестиционных перспектив...</p>
+                            <a href="#" class="btn btn-primary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <!-- Article Grid -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <!-- Article 1 -->
+                        <div class="col">
+                            <article class="card h-100 shadow-sm">
+                                <img src="images/article1.jpg" class="card-img-top" alt="Ипотека в 2024">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-success">Советы</span>
+                                        <span class="text-muted ms-2 small"><i class="far fa-clock me-1"></i>10 мая 2024</span>
+                                    </div>
+                                    <h3 class="h5">Как получить выгодную ипотеку в 2024</h3>
+                                    <p class="text-muted small">Пошаговое руководство по оформлению ипотеки с лучшими ставками...</p>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Article 2 -->
+                        <div class="col">
+                            <article class="card h-100 shadow-sm">
+                                <img src="images/article2.jpg" class="card-img-top" alt="Новые районы">
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <span class="badge bg-info">Обзоры</span>
+                                        <span class="text-muted ms-2 small"><i class="far fa-clock me-1"></i>5 мая 2024</span>
+                                    </div>
+                                    <h3 class="h5">Топ-5 новых жилых комплексов Грозного</h3>
+                                    <p class="text-muted small">Сравнение цен, инфраструктуры и планировок в новостройках...</p>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Add more articles as needed -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Назад</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Вперед</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Search Widget -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="h5 mb-3">Поиск по блогу</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Ключевые слова...">
+                                <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="h5 mb-3">Категории</h4>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    Аналитика рынка
+                                    <span class="badge bg-primary rounded-pill">14</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    Советы покупателям
+                                    <span class="badge bg-primary rounded-pill">23</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    Юридические вопросы
+                                    <span class="badge bg-primary rounded-pill">9</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="h5 mb-3">Популярные статьи</h4>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Как проверить историю квартиры</h6>
+                                        <small>3 дня назад</small>
+                                    </div>
+                                    <small class="text-muted">Советы покупателям</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Районы Грозного: где лучше жить</h6>
+                                        <small>1 неделю назад</small>
+                                    </div>
+                                    <small class="text-muted">Обзоры</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h4 class="h5 mb-3">Подписка на новости</h4>
+                            <p class="text-muted small">Получайте свежие статьи на почту</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Ваш email">
+                                </div>
+                                <button class="btn btn-primary w-100">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 mb-3">Свяжитесь с нами</h2>
+                    <p class="lead text-muted">Мы готовы ответить на все ваши вопросы о недвижимости</p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4">Контакты</h3>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-primary fs-5 me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Адрес офиса</h5>
+                                    <p class="mb-0">г. Грозный, ул. Маяковского, 147<br>БЦ "Грозный Сити", 5 этаж</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-primary fs-5 me-3">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Телефон</h5>
+                                    <p class="mb-0">
+                                        <a href="tel:+79991234567" class="text-decoration-none">+7 (999) 123-45-67</a><br>
+                                        <small class="text-muted">Ежедневно 9:00 - 20:00</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0 text-primary fs-5 me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5>Электронная почта</h5>
+                                    <p class="mb-0">
+                                        <a href="mailto:info@newgrozny.ru" class="text-decoration-none">info@newgrozny.ru</a><br>
+                                        <small class="text-muted">Ответ в течение 24 часов</small>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 text-primary fs-5 me-3">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Социальные сети</h5>
+                                    <div class="d-flex gap-3">
+                                        <a href="https://vk.com/newgrozny" target="_blank" class="text-primary">
+                                            <i class="fab fa-vk fa-lg"></i>
+                                        </a>
+                                        <a href="https://instagram.com/newgrozny" target="_blank" class="text-primary">
+                                            <i class="fab fa-instagram fa-lg"></i>
+                                        </a>
+                                        <a href="https://youtube.com/newgrozny" target="_blank" class="text-primary">
+                                            <i class="fab fa-youtube fa-lg"></i>
+                                        </a>
+                                        <a href="https://t.me/newgrozny" target="_blank" class="text-primary">
+                                            <i class="fab fa-telegram-plane fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4">Форма обратной связи</h3>
+                            
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Телефон</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" id="message" rows="4" 
+                                                  placeholder="Опишите интересующий объект или задайте вопрос"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="policy" required>
+                                            <label class="form-check-label small" for="policy">
+                                                Согласен с <a href="/privacy" class="text-decoration-none">политикой конфиденциальности</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary px-4">
+                                            Отправить сообщение
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="card mt-4 shadow-sm">
+                        <div class="card-body p-0">
+                            <iframe 
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a0d2e...&amp;source=constructor" 
+                                width="100%" 
+                                height="400" 
+                                frameborder="0"
+                                style="border:0; border-radius: 4px;"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- About Column -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="mb-4">
+                        <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                            <img src="images/logo-white.png" alt="NewGrozny Logo" style="height: 40px;">
+                            <span class="h4 ms-2 text-white">NewGrozny</span>
+                        </a>
+                        <p class="small">Онлайн-платформа для поиска и подбора недвижимости в Грозном. Актуальные предложения квартир, домов и апартаментов.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none small">Главная</a></li>
+                        <li class="mb-2"><a href="#catalog" class="text-decoration-none small">Каталог</a></li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none small">О компании</a></li>
+                        <li class="mb-2"><a href="#blog" class="text-decoration-none small">Блог</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-decoration-none small">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacts -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Контакты</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            г. Грозный, ул. Маяковского, 147
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            <a href="tel:+79991234567" class="text-decoration-none">+7 (999) 123-45-67</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@newgrozny.ru" class="text-decoration-none">info@newgrozny.ru</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-icons mt-4">
+                        <a href="https://vk.com/newgrozny" target="_blank" class="text-white me-3">
+                            <i class="fab fa-vk fa-lg"></i>
+                        </a>
+                        <a href="https://instagram.com/newgrozny" target="_blank" class="text-white me-3">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://youtube.com/@newgrozny" target="_blank" class="text-white me-3">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                        <a href="https://t.me/newgrozny" target="_blank" class="text-white">
+                            <i class="fab fa-telegram-plane fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3">Новостная рассылка</h5>
+                    <p class="small">Подпишитесь для получения новых предложений</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control form-control-sm" placeholder="Ваш email">
+                            <button class="btn btn-primary btn-sm" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="small">
+                        <i class="fas fa-lock me-2"></i>
+                        Ваши данные защищены
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-top border-dark mt-5 pt-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="small mb-0">
+                            © 2024 NewGrozny. Все права защищены
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="/privacy" class="small text-decoration-none me-3">Политика конфиденциальности</a>
+                        <a href="/terms" class="small text-decoration-none">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top -->
+            <div class="text-end mt-3">
+                <a href="#home" class="text-decoration-none small">
+                    <i class="fas fa-arrow-up me-2"></i>Наверх
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
